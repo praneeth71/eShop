@@ -1,0 +1,119 @@
+/* Header Container */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #131921;
+    padding: 10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+  }
+  
+  /* Logo Section (Left) */
+  .header__logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .header__logoImage {
+    color: #f08804;
+    margin-right: 5px;
+  }
+  
+  .header__logoTitle {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Search Bar (Center) */
+  .header__search {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 20px;
+  }
+  
+  .header__searchInput {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .header__searchIcon {
+    padding: 10px;
+    background-color: #f08804;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Navigation Bar (Right Corner) */
+  .header__nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;  /* Moves nav to right */
+  }
+  
+  /* Nav Items */
+  .nav__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nav__item:hover {
+    color: #f08804;
+  }
+  
+  .nav__itemLineOne {
+    font-size: 12px;
+  }
+  
+  .nav__itemLineTwo {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Shopping Basket */
+  .nav__itemBasket {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .nav__itemBasket span {
+    margin-left: 5px;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .header__search {
+      width: 90%;
+      margin-top: 10px;
+    }
+  
+    .header__nav {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+  

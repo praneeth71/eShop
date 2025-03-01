@@ -1,0 +1,44 @@
+/* Home Container */
+.home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #EAEDED; /* Amazon's background color */
+  }
+  
+  /* Home Content */
+  .home__container {
+    width: 100%;
+    max-width: 1400px; /* Keeps it centered */
+    position: relative;
+  }
+  
+  /* Amazon Banner Image */
+  .home__image {
+    width: 100%;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    z-index: -1;
+    margin-bottom: -150px;
+  }
+  
+  /* Product Rows */
+  .home__row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Space between products */
+    margin: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home__image {
+      margin-bottom: -50px;
+    }
+  
+    .home__row {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
